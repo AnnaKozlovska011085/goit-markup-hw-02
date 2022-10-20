@@ -1,0 +1,78 @@
+/*
+Футер
+/* лого #2196F3
+#FFFFFF
+адрес #FFFFFF
+почта rgba(255, 255, 255, 0.6)
+телефон rgba(255, 255, 255, 0.6)
+
+бэкграунд хедер #FFFFFF
+бэкграунд #2F303A
+
+бэкграунд #F5F5F5
+наша команда #F5F4FA
+бэкграунд футер #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent: #2196f3;
+  --logo-color: #000000;
+}
+body {
+  background-color: #f5f5f5;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+.logo {
+  color: var(--logo-color);
+  text-decoration-line: none;
+}
+.item-logo {
+  color: var(--accent);
+}
+
+/* Site nav */
+
+.site-nav a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.contacts a {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent);
+}
+
+/* Hero */
+
+.hero {
+  background: #2f303a;
+  color: #ffffff;
+}
+
+/* Section */
+
+.section-text {
+  color: var(--title-text-color);
+}
+
+/* Footer */
