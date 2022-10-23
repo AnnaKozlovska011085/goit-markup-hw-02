@@ -1,78 +1,274 @@
-/*
-Футер
-/* лого #2196F3
-#FFFFFF
-адрес #FFFFFF
-почта rgba(255, 255, 255, 0.6)
-телефон rgba(255, 255, 255, 0.6)
-
-бэкграунд хедер #FFFFFF
-бэкграунд #2F303A
-
-бэкграунд #F5F5F5
-наша команда #F5F4FA
-бэкграунд футер #2F303A */
-
 :root {
-  --primary-text-color: #212121;
-  --title-text-color: #757575;
-  --accent: #2196f3;
-  --logo-color: #000000;
-}
-body {
-  background-color: #f5f5f5;
-  color: var(--primary-text-color);
+  --main-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --ouwer-text-color: #757575;
+  --acent-color: #2196f3;
+  --contener-color: #eeeeee;
+  --logo-color-text: #000000;
+  --buttons-port-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --background-footer-color: #2f303a;
+  --background-section: #e5e5e5;
+  --line-color: #ececec;
+  --background-color: #ffffff;
+  --icon-color: #afb1b8;
+  --main-font: Roboto, sans-serif;
+  --secondary-font: raleway, sans-serif;
 }
 
-ul {
+body {
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
-header {
-  background-color: #ffffff;
+/* ----------HEADER---------- */
+.header {
+  background-color: var(--background-color);
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--acent-color);
+  text-decoration: none;
+}
+.logo-header {
+  color: var(--logo-color-text);
 }
 
 .logo:hover {
-  color: var(--accent);
-}
-.logo {
-  color: var(--logo-color);
-  text-decoration-line: none;
-}
-.item-logo {
-  color: var(--accent);
+  color: var(--acent-color);
 }
 
-/* Site nav */
-
-.site-nav a {
-  color: var(--primary-text-color);
-  text-decoration: none;
+.nav-list {
 }
-.contacts a {
-  color: var(--title-text-color);
-  text-decoration: none;
+.nav-item {
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent);
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent);
+.nav-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 
-/* Hero */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--acent-color);
+}
+.contacts-list {
+}
+.contacts-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--ouwer-text-color);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--acent-color);
+}
+
+.nav-list .current {
+  color: var(--acent-color);
+}
+/*----------HERO---------- */
 
 .hero {
-  background: #2f303a;
-  color: #ffffff;
+  background: var(--background-footer-color);
+  color: var(--secondary-text-color);
+}
+.hero-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.hero-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  background: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
-/* Section */
-
+/*----------SECTION----------*/
+.hide {
+  opacity: 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ouwer-text-color);
+}
 .section-text {
-  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--ouwer-text-color);
 }
 
-/* Footer */
+/*----------WORK---------- */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/*----------TEAM---------- */
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--ouwer-text-color);
+}
+
+/*----------FOOTER----------*/
+.footer {
+  background-color: var(--background-footer-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--acent-color);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--acent-color);
+}
+
+.logo-footer {
+  color: var(--secondary-text-color);
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.adress-street:hover,
+.adress-street:focus {
+  color: var(--acent-color);
+}
+
+.adress-street {
+  color: var(--secondary-text-color);
+}
+.adress-mail:hover,
+.adress-mail:focus {
+  color: var(--acent-color);
+}
+.adress-mail {
+  color: var(--footer-text-color);
+}
+.adress-tel {
+  color: var(--footer-text-color);
+}
+.adress-tel:hover,
+.adress-tel:focus {
+  color: var(--acent-color);
+}
+
+/* ----------PORTFOLIO---------- */
+.examples-filter-btn {
+  background-color: var(--buttons-port-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+.examples-filter-btn:hover,
+.examples-filter-btn:focus {
+  color: var(--acent-color);
+}
+.examples .current {
+  background: var(--acent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.examples-sites-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.examples-sites-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--ouwer-text-color);
+}
