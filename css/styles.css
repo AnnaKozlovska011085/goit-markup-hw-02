@@ -124,8 +124,17 @@ body {
 }
 
 /*----------SECTION----------*/
-.hide {
-  opacity: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .section-title {
   font-weight: 700;
@@ -133,13 +142,9 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--ouwer-text-color);
 }
 .section-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--ouwer-text-color);
 }
 
@@ -154,7 +159,9 @@ body {
 }
 
 /*----------TEAM---------- */
-
+.team {
+  background-color: var(--buttons-port-color);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -204,6 +211,7 @@ body {
 
 .address {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -245,6 +253,7 @@ body {
 .examples-filter-btn:hover,
 .examples-filter-btn:focus {
   color: var(--acent-color);
+  background-color: var(--background-color);
 }
 .examples .current {
   background: var(--acent-color);
