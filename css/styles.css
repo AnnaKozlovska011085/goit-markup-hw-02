@@ -241,6 +241,7 @@ body {
 
 /* ----------PORTFOLIO---------- */
 .examples-filter-btn {
+  font-family: inherit;
   background-color: var(--buttons-port-color);
   font-weight: 500;
   font-size: 16px;
